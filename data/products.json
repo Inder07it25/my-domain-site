@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": "gamesprite",
+      "name": "GameSprite",
+      "category": "websites",
+      "description": "A browser studio for sprite sheets, image compression, app icons, and game-ready assets.",
+      "image": "",
+      "linkType": "internal",
+      "path": "/gamesprite/",
+      "url": "",
+      "featured": true
+    },
+    {
+      "id": "consumer-app",
+      "name": "Consumer Mobile App",
+      "category": "apps",
+      "description": "Placeholder for a published iOS and Android app. Replace this card from Admin when the store listing is ready.",
+      "image": "",
+      "linkType": "none",
+      "path": "",
+      "url": "",
+      "featured": true
+    },
+    {
+      "id": "business-website",
+      "name": "Business Website",
+      "category": "websites",
+      "description": "Placeholder for a company or product website built and published by SISdar Apps.",
+      "image": "",
+      "linkType": "none",
+      "path": "",
+      "url": "",
+      "featured": true
+    },
+    {
+      "id": "custom-software",
+      "name": "Custom Software",
+      "category": "software",
+      "description": "Placeholder for a tailored web or mobile tool. Swap in a real name, description, and link from Admin.",
+      "image": "",
+      "linkType": "none",
+      "path": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "id": "utility-app",
+      "name": "Utility Mobile App",
+      "category": "apps",
+      "description": "Placeholder for a focused utility app. Store links can be added later without redesigning this page.",
+      "image": "",
+      "linkType": "none",
+      "path": "",
+      "url": "",
+      "featured": false
+    },
+    {
+      "id": "marketing-site",
+      "name": "Marketing Website",
+      "category": "websites",
+      "description": "Placeholder for a campaign or brand site. Use Admin to point this card at a live URL.",
+      "image": "",
+      "linkType": "none",
+      "path": "",
+      "url": "",
+      "featured": false
+    }
+  ]
+}

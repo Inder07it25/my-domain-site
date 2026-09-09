@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — SISdar Apps</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#F5F8FC" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script>
+    (function () {
+      var path = location.pathname || "";
+      if (path.indexOf("/gamesprite") === 0) {
+        sessionStorage.setItem("sisdar-spa-redirect", path + location.search + location.hash);
+        location.replace("/gamesprite/");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/index.html" aria-label="SISdar Apps home">
+        <img src="/assets/logo.png" alt="" class="brand-logo" width="48" height="48" />
+        <span class="brand-text" aria-hidden="true"><span class="brand-sisdar">sisdar</span><span class="brand-apps">apps</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/products.html">Products</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="section">
+    <div class="container page-hero">
+      <span class="eyebrow">404</span>
+      <h1>That page is not here</h1>
+      <p>The address may have changed, or GameSprite may still be deploying to this domain.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="/index.html">Back home</a>
+        <a class="button button-secondary" href="/products.html">View products</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

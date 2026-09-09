@@ -3,65 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SISDAR Apps - Developer Information</title>
-  <meta name="description" content="Official developer information for SISDAR Apps, published by SISDAR Apps and developed by Sweta Prakash." />
-  <meta property="og:title" content="SISDAR Apps - Developer Information" />
-  <meta property="og:description" content="Official developer information, privacy policy, terms, and support contact details for SISDAR Apps." />
+  <title>SISdar Apps — Mobile apps and websites</title>
+  <meta name="description" content="SISdar Apps designs and ships mobile apps, websites, and custom software. Founded by Sweta Prakash, CEO and CTO." />
+  <meta name="theme-color" content="#F5F8FC" />
+  <link rel="canonical" href="https://sisdarapps.co.in/" />
+  <meta property="og:title" content="SISdar Apps — Mobile apps and websites" />
+  <meta property="og:description" content="SISdar Apps designs and ships mobile apps, websites, and custom software." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://username.github.io/public/index.html" />
-  <meta property="og:image" content="assets/icon.png" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Cdefs%3E%3ClinearGradient id=%27g%27 x1=%270%27 y1=%270%27 x2=%271%27 y2=%271%27%3E%3Cstop stop-color=%27%236cc7ff%27/%3E%3Cstop offset=%271%27 stop-color=%27%23ffd46a%27/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%2764%27 height=%2764%27 rx=%2716%27 fill=%27%23061b34%27/%3E%3Crect x=%276%27 y=%276%27 width=%2752%27 height=%2752%27 rx=%2714%27 fill=%27url(%23g)%27/%3E%3Ctext x=%2732%27 y=%2741%27 text-anchor=%27middle%27 font-family=%27Arial,sans-serif%27 font-size=%2728%27 font-weight=%27800%27 fill=%27%23061b34%27%3ESA%3C/text%3E%3C/svg%3E" />
+  <meta property="og:url" content="https://sisdarapps.co.in/" />
+  <meta property="og:image" content="https://sisdarapps.co.in/assets/logo.png" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SISdar Apps",
+    "url": "https://sisdarapps.co.in/",
+    "logo": "https://sisdarapps.co.in/assets/logo.png",
+    "email": "sisdarapps@gmail.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Sweta Prakash",
+      "jobTitle": "Founder, CEO and CTO"
+    }
+  }
+  </script>
 </head>
-<body>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/logo.png" alt="SISDAR Apps logo" class="brand-logo" />
-        <span class="brand-text">SISDAR Apps</span>
+      <a class="brand" href="index.html" aria-label="SISdar Apps home">
+        <img src="assets/logo.png" alt="" class="brand-logo" width="48" height="48" />
+        <span class="brand-text" aria-hidden="true"><span class="brand-sisdar">sisdar</span><span class="brand-apps">apps</span></span>
       </a>
-      <nav class="site-nav">
-        <a href="privacy.html">Privacy</a>
-        <a href="terms.html">Terms</a>
-        <a href="contact.html">Contact</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="products.html" data-nav="products">Products</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="section hero">
+  <main id="main">
+    <section class="section hero ribbon-stage">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Official Developer Information</span>
-          <h1>SISDAR Apps</h1>
-          <p>SISDAR Apps publishes public information pages for mobile apps and games developed by Sweta Prakash. This website provides official privacy, terms, and support details for SISDAR Apps products.</p>
+          <span class="eyebrow">SISdar Apps studio</span>
+          <h1>We design and ship mobile apps and websites</h1>
+          <p>SISdar Apps is a product studio for store-ready mobile apps, polished websites, and custom software — led by Sweta Prakash, Founder, CEO and CTO.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="privacy.html">Privacy Policy</a>
-            <a class="button button-secondary" href="terms.html">Terms &amp; Conditions</a>
-          </div>
-
-          <div class="download-placeholder">
-            <div class="app-icon">
-              <img src="assets/icon.png" alt="SISDAR Apps icon" />
-            </div>
-            <div>
-              <div class="placeholder-label">Published by SISDAR Apps</div>
-              <div class="download-buttons">
-                <span class="download-chip">Developer: Sweta Prakash</span>
-                <a class="download-chip" href="mailto:sisdarapps@gmail.com">sisdarapps@gmail.com</a>
-              </div>
-            </div>
+            <a class="button button-primary" href="products.html">See products</a>
+            <a class="button button-secondary" href="contact.html">Contact us</a>
           </div>
         </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="ribbon-mark" viewBox="0 0 320 280" fill="none">
+            <path d="M86 54c38-34 86-18 108 8 24 28 18 62-8 82-28 22-64 18-92-4" stroke="#3AA0FF" stroke-width="28" stroke-linecap="round"/>
+            <path d="M118 132c32 24 74 22 102-4 30-28 34-70 8-102" stroke="#0E3A6B" stroke-width="28" stroke-linecap="round"/>
+            <path d="M70 188c46 38 108 28 148-18" stroke="#3AA0FF" stroke-width="18" stroke-linecap="round" opacity="0.45"/>
+          </svg>
+        </div>
+      </div>
+    </section>
 
-        <div class="hero-media">
-          <div class="hero-card">
-            <div class="hero-card-top">Developer Profile</div>
-            <div class="hero-card-body">
-              <p><strong>Sweta Prakash</strong> creates and maintains mobile apps and games published under SISDAR Apps.</p>
-              <p>Use this site to review official policies, contact support, and confirm the publisher details connected with SISDAR Apps products.</p>
-            </div>
-          </div>
+    <section class="section section-ice">
+      <div class="container">
+        <div class="section-header">
+          <h2>What we build</h2>
+          <p>From consumer apps to product websites, every release is meant to feel considered, reliable, and ready for the stores.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">01</div>
+            <h3>Mobile Apps</h3>
+            <p>iOS and Android products with clear UX, store listings, and publisher-ready privacy and terms.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">02</div>
+            <h3>Websites</h3>
+            <p>Fast marketing and product sites that introduce the brand and let people try the work.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">03</div>
+            <h3>Custom Software</h3>
+            <p>Focused tools for a specific workflow — including GameSprite, our in-browser asset studio.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -69,54 +103,60 @@
     <section class="section">
       <div class="container">
         <div class="section-header">
-          <h2>Official Pages</h2>
-          <p>Quick access to the public information pages served for SISDAR Apps products.</p>
+          <h2>Featured products</h2>
+          <p>Live tools and placeholders you can replace from the admin catalog when a new app ships.</p>
         </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-icon">01</div>
-            <h3>Privacy Policy</h3>
-            <p>Learn how anonymous analytics, crash reports, device information, and advertising identifiers may be used.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon">02</div>
-            <h3>Terms &amp; Conditions</h3>
-            <p>Review the usage terms that apply to apps and games published by SISDAR Apps.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon">03</div>
-            <h3>Contact Support</h3>
-            <p>Reach the SISDAR Apps support channel for policy, app, or publisher questions.</p>
-          </article>
-        </div>
+        <div class="product-grid" data-product-grid data-featured="true"></div>
       </div>
     </section>
 
-    <section class="section page-section">
-      <div class="container content-card">
-        <h1>Publisher &amp; Developer</h1>
-        <p>SISDAR Apps is the publisher for this public information site. Mobile apps and games are developed by Sweta Prakash.</p>
-
-        <h2>Support</h2>
-        <p>For questions about SISDAR Apps products, contact <a href="mailto:sisdarapps@gmail.com">sisdarapps@gmail.com</a>.</p>
-
-        <div class="contact-panel">
-          <h3>Need a policy page?</h3>
-          <p>Visit the <a href="privacy.html">Privacy Policy</a>, <a href="terms.html">Terms &amp; Conditions</a>, or <a href="contact.html">Contact page</a>.</p>
+    <section class="section section-ice">
+      <div class="container">
+        <div class="section-header">
+          <h2>Leadership</h2>
+          <p>One founder holding product, engineering, and studio direction.</p>
         </div>
+        <article class="leader-card">
+          <div class="leader-mark">
+            <div>
+              <div class="leader-initials">SP</div>
+              <p>CEO &amp; CTO</p>
+            </div>
+          </div>
+          <div class="leader-copy">
+            <h3>Sweta Prakash</h3>
+            <p>Founder, Chief Executive Officer and Chief Technology Officer.</p>
+            <p>B.E. (Computer Science), Annamalai University, 2007–2011.</p>
+            <p><a href="about.html">Read the studio story</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-navy">
+      <div class="container cta-band">
+        <div>
+          <h2>Have a product in mind?</h2>
+          <p>Write to <a href="mailto:sisdarapps@gmail.com">sisdarapps@gmail.com</a>. We reply within 48 hours.</p>
+        </div>
+        <a class="button button-secondary" href="contact.html">Get in touch</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; 2026 SISDAR Apps. Published by SISDAR Apps, developed by Sweta Prakash.</p>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms &amp; Conditions</a>
+      <p>&copy; 2026 SISdar Apps. Built by Sweta Prakash.</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
         <a href="contact.html">Contact</a>
-      </div>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
     </div>
   </footer>
+  <script src="js/site.js"></script>
+  <script src="js/products.js"></script>
 </body>
 </html>
