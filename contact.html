@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="js/theme-init.js"></script>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body data-page="contact">
@@ -27,7 +28,13 @@
         <img src="assets/logo.png" alt="" class="brand-logo" width="48" height="48" />
         <span class="brand-text" aria-hidden="true"><span class="brand-sisdar">sisdar</span><span class="brand-apps">apps</span></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+          <span class="theme-toggle-sun" aria-hidden="true"></span>
+          <span class="theme-toggle-moon" aria-hidden="true"></span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <a href="index.html" data-nav="home">Home</a>
         <a href="about.html" data-nav="about">About</a>
@@ -42,7 +49,7 @@
       <div class="container">
         <span class="eyebrow">Contact us</span>
         <h1>We reply within 48 hours</h1>
-        <p>Use the form to draft an email, or write directly to <a href="mailto:sisdarapps@gmail.com">sisdarapps@gmail.com</a>.</p>
+        <p>Send a message with the form below. It is delivered to <strong>sisdarapps@gmail.com</strong>, and we can reply to the email you enter.</p>
       </div>
     </section>
 
@@ -71,14 +78,14 @@
           </div>
         </div>
 
-        <form class="contact-form" id="contact-form">
+        <form class="contact-form" id="contact-form" novalidate>
           <h2>Send a message</h2>
-          <p class="muted-note">This opens your email app with the details filled in. Nothing is stored on this website until you send it.</p>
+          <p class="muted-note">Your message is emailed to sisdarapps@gmail.com. We use your address only to reply.</p>
           <label>Name
-            <input type="text" name="name" required autocomplete="name" />
+            <input type="text" name="name" required autocomplete="name" maxlength="120" />
           </label>
           <label>Email
-            <input type="email" name="email" required autocomplete="email" />
+            <input type="email" name="email" required autocomplete="email" maxlength="200" />
           </label>
           <label>Topic
             <select name="topic">
@@ -90,10 +97,12 @@
             </select>
           </label>
           <label>Message
-            <textarea name="message" required></textarea>
+            <textarea name="message" required maxlength="5000"></textarea>
           </label>
+          <input class="honey-field" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <p class="form-status" id="contact-status" role="status" aria-live="polite" hidden></p>
           <div class="form-actions">
-            <button class="button button-primary" type="submit">Open email</button>
+            <button class="button button-primary" type="submit" id="contact-submit">Send message</button>
           </div>
         </form>
       </div>
@@ -113,17 +122,7 @@
     </div>
   </footer>
   <script src="js/site.js"></script>
-  <script>
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
-      event.preventDefault();
-      var form = event.target;
-      var name = form.elements.name.value.trim();
-      var email = form.elements.email.value.trim();
-      var topic = form.elements.topic.value;
-      var message = form.elements.message.value.trim();
-      var body = "Name: " + name + "\nEmail: " + email + "\nTopic: " + topic + "\n\n" + message;
-      window.location.href = "mailto:sisdarapps@gmail.com?subject=" + encodeURIComponent("SISdar Apps: " + topic) + "&body=" + encodeURIComponent(body);
-    });
-  </script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
+

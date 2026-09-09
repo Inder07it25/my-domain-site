@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — SISdar Apps</title>
-  <meta name="description" content="Privacy Policy for SISdar Apps websites, mobile apps, and games. Effective August 2026." />
+  <meta name="description" content="Privacy Policy for SISdar Apps websites, mobile apps, and games — including analytics, ads, purchases, Google Sign-In, and photos. Effective September 2026." />
   <meta name="theme-color" content="#F5F8FC" />
   <link rel="canonical" href="https://sisdarapps.co.in/privacy.html" />
   <meta property="og:title" content="Privacy Policy — SISdar Apps" />
@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="js/theme-init.js"></script>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body data-page="privacy">
@@ -27,7 +28,13 @@
         <img src="assets/logo.png" alt="" class="brand-logo" width="48" height="48" />
         <span class="brand-text" aria-hidden="true"><span class="brand-sisdar">sisdar</span><span class="brand-apps">apps</span></span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+          <span class="theme-toggle-sun" aria-hidden="true"></span>
+          <span class="theme-toggle-moon" aria-hidden="true"></span>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
       <nav class="site-nav" id="site-nav" aria-label="Main">
         <a href="index.html" data-nav="home">Home</a>
         <a href="about.html" data-nav="about">About</a>
@@ -40,47 +47,77 @@
   <main id="main">
     <section class="section page-hero">
       <div class="container content-card">
-        <span class="eyebrow">Effective August 2026</span>
+        <span class="eyebrow">Effective September 2026</span>
         <h1>Privacy Policy</h1>
-        <p>SISdar Apps is committed to protecting your privacy while delivering apps, games, and this website. This policy explains how data is collected and used. Published by SISdar Apps and developed by Sweta Prakash.</p>
+        <p>This policy applies to websites, mobile apps, and games published by SISdar Apps and developed by Sweta Prakash. Not every product uses every feature below — each app or game only collects what it needs to work.</p>
 
         <h2>Publisher and developer</h2>
         <p>Published by SISdar Apps. Developed by Sweta Prakash, Founder, CEO and CTO. Contact: <a href="mailto:sisdarapps@gmail.com">sisdarapps@gmail.com</a>.</p>
 
         <h2>This website</h2>
-        <p>The public marketing pages do not use an account system. If you use the contact form, your name, email, topic, and message stay in your email app until you send them to us. We do not run a server-side form database. The admin catalog tool is for SISdar staff only and is not intended for public use.</p>
+        <p>The public marketing pages do not use an account system. If you use the contact form, your name, email, topic, and message are sent to sisdarapps@gmail.com through a form email service so we can reply. We do not run our own server-side form database. Theme preference (light/dark) may be stored in your browser’s local storage only. The admin catalog tool is for SISdar staff only and is not intended for public use.</p>
 
-        <h2>Data collected in apps</h2>
+        <h2>Information we may collect in apps and games</h2>
         <ul>
-          <li>Anonymous analytics</li>
-          <li>Device information</li>
-          <li>Crash reports</li>
-          <li>Advertising identifiers</li>
+          <li><strong>Device and diagnostics</strong> — device model, OS version, crash logs, and performance data</li>
+          <li><strong>Analytics</strong> — anonymous or aggregated usage events (for example feature opens or purchase funnel steps)</li>
+          <li><strong>Advertising identifiers</strong> — where ads are shown, subject to platform limits and your device settings</li>
+          <li><strong>Purchase status</strong> — subscription or in-app purchase entitlements handled by Apple or Google</li>
+          <li><strong>Account information you provide</strong> — such as an email when you sign in with Google or contact support</li>
+          <li><strong>Content you choose to process</strong> — for example photos you select for backup in products like PhotoVault</li>
+          <li><strong>Gameplay and progress data</strong> — scores, levels, settings, or virtual item state stored on device or with platform services</li>
         </ul>
 
-        <h2>Third-party services</h2>
-        <p>Apps and games may use the following services to support the experience:</p>
+        <h2>Google Sign-In and Google services</h2>
+        <p>Some apps (including PhotoVault) let you connect a Google account. When you do, we request only the permissions needed for the feature you enable. Depending on the product, that may include:</p>
         <ul>
-          <li>Google AdMob</li>
-          <li>Firebase Analytics</li>
-          <li>Apple App Store Services</li>
-          <li>Google Play Services</li>
+          <li>Basic profile information such as your email address to identify the linked account</li>
+          <li>Access to upload or manage photos in <strong>your</strong> Google Photos library (for backup features)</li>
+          <li>Read-only Google Drive storage quota metadata so the app can show remaining space warnings</li>
         </ul>
+        <p>We do not sell your Google account data. Tokens are used to perform actions you request (for example backing up photos to your own Google Photos account). You can disconnect Google Sign-In in the app and revoke access in your Google Account permissions at any time.</p>
 
-        <h2>How data is used</h2>
-        <p>No personal information is sold. Data is used to improve gameplay and app functionality, diagnose crashes, measure anonymous usage, and, where ads are shown, serve and measure advertising.</p>
+        <h2>Photos and media on your device</h2>
+        <p>Apps that work with your camera roll request photo library permission to display, select, or process media you choose. Photos remain yours. Backup products upload media to services you authorize (such as your Google Photos account), not to a SISdar Apps media server for resale or advertising.</p>
+
+        <h2>Ads, analytics, and store services</h2>
+        <p>Depending on the product, we may use:</p>
+        <ul>
+          <li>Google AdMob (advertising in free apps or games)</li>
+          <li>Firebase Analytics or similar crash and analytics tools</li>
+          <li>Apple App Store / Google Play billing and distribution services</li>
+          <li>Google Play Services or Apple platform frameworks required for Sign-In, push, or store features</li>
+        </ul>
+        <p>Those providers process data under their own policies. You can limit ad personalization in your device settings where the platform allows it.</p>
+
+        <h2>How we use information</h2>
+        <ul>
+          <li>Operate and improve apps, games, and this website</li>
+          <li>Provide backups, sync, account-linked, or gameplay features you turn on</li>
+          <li>Process purchases and restore entitlements</li>
+          <li>Measure stability, fix bugs, and understand feature or gameplay usage</li>
+          <li>Show ads in products that include advertising</li>
+          <li>Respond to support requests</li>
+        </ul>
+        <p>We do <strong>not</strong> sell personal information.</p>
+
+        <h2>Data retention and your choices</h2>
+        <ul>
+          <li>Revoke Google permissions in your Google Account and sign out inside the app</li>
+          <li>Delete the app or game to remove local data stored on your device</li>
+          <li>Manage subscriptions in Apple ID or Google Play subscription settings</li>
+          <li>Email <a href="mailto:sisdarapps@gmail.com">sisdarapps@gmail.com</a> for privacy questions or deletion requests related to information we control</li>
+        </ul>
+        <p>We aim to respond within 48 hours.</p>
 
         <h2>Children’s privacy</h2>
-        <p>Our apps and this website are not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information, email <a href="mailto:sisdarapps@gmail.com">sisdarapps@gmail.com</a> and we will delete it.</p>
-
-        <h2>Your rights and deletion requests</h2>
-        <p>You may request access to or deletion of personal information we hold about you, including advertising identifiers tied to support requests, by emailing <a href="mailto:sisdarapps@gmail.com">sisdarapps@gmail.com</a>. We aim to respond within 48 hours.</p>
+        <p>Our apps, games, and this website are not directed at children under 13 (or the minimum age required in your country). We do not knowingly collect personal information from children. If you believe a child has provided personal information, email <a href="mailto:sisdarapps@gmail.com">sisdarapps@gmail.com</a> and we will take appropriate steps.</p>
 
         <h2>Jurisdiction</h2>
-        <p>SISdar Apps operates from India. These practices are intended to comply with applicable Indian law and with the privacy rules of the Apple App Store and Google Play.</p>
+        <p>SISdar Apps operates from India. These practices are intended to comply with applicable Indian law and with the privacy rules of the Apple App Store and Google Play. Information may be processed in countries where we or our service providers operate.</p>
 
         <h2>Changes</h2>
-        <p>We may update this policy. The effective date at the top of this page will change when we do. Continued use of the website or apps after an update means you accept the revised policy.</p>
+        <p>We may update this policy. The effective date at the top of this page will change when we do. Continued use of the website, apps, or games after an update means you accept the revised policy.</p>
 
         <p>Questions: visit the <a href="contact.html">Contact page</a>.</p>
       </div>
