@@ -4,7 +4,7 @@
 
   var statusEl = document.getElementById("contact-status");
   var submitBtn = document.getElementById("contact-submit");
-  var endpoint = "https://formsubmit.co/ajax/sisdarapps@gmail.com";
+  var endpoint = "https://formsubmit.co/ajax/8fbf37ef40619cccf740b38e15113a4a";
 
   function setStatus(message, kind) {
     if (!statusEl) return;
