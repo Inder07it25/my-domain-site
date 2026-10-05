@@ -12,13 +12,13 @@
       "featured": true
     },
     {
-      "id": "consumer-app",
-      "name": "Consumer Mobile App",
+      "id": "picvio",
+      "name": "Picvio",
       "category": "apps",
-      "description": "Placeholder for a published iOS and Android app. Replace this card from Admin when the store listing is ready.",
+      "description": "Back up iPhone photos to your own Google Photos account. Privacy-first uploads you control.",
       "image": "",
-      "linkType": "none",
-      "path": "",
+      "linkType": "internal",
+      "path": "/picvio.html",
       "url": "",
       "featured": true
     },
