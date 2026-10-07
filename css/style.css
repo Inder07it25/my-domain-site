@@ -702,6 +702,12 @@ label:has(input[type="checkbox"]) input {
   color: var(--navy);
 }
 
+.content-card .app-icon {
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 22%;
+}
+
 .content-card h2 {
   margin-top: 1.8rem;
   color: var(--navy);
